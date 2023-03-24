@@ -159,4 +159,23 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 //      console.log(students[i]);
 // }
 
-console.log('hello new change')
+// Flag Variables , Break statement
+
+var cities = ["faisalabad", "lahore", "multan", "karachi"];
+var city = prompt("Enter your city");
+
+var matchFound = false;
+
+for(var i = 0 ; i < cities.length; i++){
+
+     if(city === cities[i]){
+          matchFound = true ; 
+          console.log("City found in the list");
+          break;
+     }
+     console.log(cities[i]);
+}
+
+if (matchFound == false){
+     console.log( city +" is not found in the list");
+}
