@@ -167,15 +167,52 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 // var matchFound = false;
 
 // for(var i = 0 ; i < cities.length; i++){
-
-//      if(city === cities[i]){
+//      if(city.toLowerCase() === cities[i]){
 //           matchFound = true ; 
 //           console.log("City found in the list");
 //           break;
 //      }
 //      console.log(cities[i]);
 // }
-
 // if (matchFound == false){
 //      console.log( city +" is not found in the list");
+// }
+
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+// var fullNames = [];
+
+
+// 1). 1st Loop : i = 0,  0 < 5   true    
+               // 2nd loop:  1).  j = 0,  0 < 4  print (firstName[0]: BlueRay ) + (lastName[j] : Zzz)
+// i = i + 1; 
+// 2). i = 1,   1 < 5   true  student[1] i = 1 + 1;
+// 3). i = 2,   2 < 5   true  student[2] i = 2 + 1;
+// 4). i = 3,   3 < 5   true  student[3] i = 3 + 1;
+// 5). i = 4,   4 < 5   true  student[4] i = 4 + 1;
+// 6). i = 5,   5 < 5   false 
+
+// for (var i = 0; i < firstNames.length; i++) {
+//      for (var j = 0; j < lastNames.length; j++) {
+//           console.log(firstNames[i] +  lastNames[j]);
+//           // fullNames.push(firstNames[i] + lastNames[j]);
+//      }
+// }
+
+// Task 01 
+// 1). Get User input (How many values he/she wants to Enter)
+// 2). Push User Values into empty array iteratively
+// 3). Print Those values  
+
+// Solution 
+
+// var arr = [];
+// var value = Number(prompt("Enter how many values you want to enter"));
+
+// for(var i = 0 ; i < value;  i++){
+//      arr.push(prompt("Enter Value"))
+// }
+
+// for(var i = 0; i < arr.length; i++){
+//      console.log(arr[i]);
 // }
