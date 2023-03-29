@@ -216,3 +216,50 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 // for(var i = 0; i < arr.length; i++){
 //      console.log(arr[i]);
 // }
+
+// String
+
+// var intro = "I am S learnSing JavaScript";
+
+// console.log(intro.indexOf("S"));
+// console.log(intro.charAt(12));
+// console.log(intro.replace("JavaScript", "JS"));
+
+// for(var i = 0 ; i < intro.length ; i++){
+//      console.log(intro[i]);
+// }
+
+
+// function
+
+// function Sum( a , b ){
+//      var sum = a + b;
+//      console.log(sum);
+// }
+
+// for (var i = 0; i < 3 ; i++ ){
+//     var a = Number(prompt("Enter First Value")) ;
+//     var b = Number(prompt("Enter Second Value"));
+//      Sum(a, b)
+// }
+
+// Sum( Number(prompt("Enter First Value")),  Number(prompt("Enter Second Value")) );
+// Sum(Number(prompt("Enter First Value")) ,  Number(prompt("Enter Second Value")) );
+
+// var x = Number(prompt("Enter First Value")) ;
+// var y = Number(prompt("Enter Second Value")) ;
+
+// Sum(x , y);
+
+// DOM
+// var elementID = document.getElementById("heading");
+// var elementClass = document.getElementsByClassName("heading1");
+// var elementTag = document.getElementsByTagName("h1");
+
+// var heading = document.getElementById("heading");
+// heading.innerText = "Lecture 01";
+
+// var heading2 = document.getElementById("container");
+// console.log(heading2);
+// heading2.innerHTML = "<h1>This is heading 2</h1>";
+// console.log(heading2);
