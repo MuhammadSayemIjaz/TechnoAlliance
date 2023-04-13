@@ -1,3 +1,4 @@
+
 // Data Types 
 // Number  123 / 12.324
 // String " This is String";
@@ -13,7 +14,8 @@
 // var num2 = 56; 
 
 // var sum = 2 - (4 / 6  * 4) * 3 + 2;
-
+// = 4 - 5 * 3 + 2
+// = 4 - 15 + 2
 // // Brackets ( )
 // // * / 
 // // + -
@@ -35,7 +37,7 @@
 
 
 
-// var num2 = prompt("Enter Second Number ");
+// var num2 = Number(prompt("Enter Second Number "));
 
 // alert(typeof(num1))
 // // var num1 = 3;
@@ -98,11 +100,10 @@
 //           console.log("You can not apply for this job");
 //      }
 // }
-
 // Arrays
 
 // var studentName = "John";
-// var rollNO = 12345;
+// var rollNo = 12345;
 // var Class = "10th";
 // var regNo = "123-ABC12";
 
@@ -134,7 +135,7 @@
 // students.shift();
 
 // students.unshift("Doe", "Male");
-// students.splice(2, 2, "Doe", "Male");
+// students.splice(2, 0, "Doe", "Male");
 // var std = students.slice(1, 4);
 
 // console.log("After ", std);
@@ -145,7 +146,7 @@
 // num--;
 // console.log(num); 
 
-var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
+// var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 
 // 1). i = 0,   0 < 5   true  student[0] i = i + 1; 
 // 2). i = 1,   1 < 5   true  student[1] i = 1 + 1;
@@ -168,7 +169,7 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 
 // for(var i = 0 ; i < cities.length; i++){
 //      if(city.toLowerCase() === cities[i]){
-//           matchFound = true ; 
+//           matchFound = true; 
 //           console.log("City found in the list");
 //           break;
 //      }
@@ -184,7 +185,7 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 
 
 // 1). 1st Loop : i = 0,  0 < 5   true    
-               // 2nd loop:  1).  j = 0,  0 < 4  print (firstName[0]: BlueRay ) + (lastName[j] : Zzz)
+// 2nd loop:  1).  j = 0,  0 < 4  print (firstName[0]: BlueRay ) + (lastName[j] : Zzz)
 // i = i + 1; 
 // 2). i = 1,   1 < 5   true  student[1] i = 1 + 1;
 // 3). i = 2,   2 < 5   true  student[2] i = 2 + 1;
@@ -222,6 +223,7 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 // var intro = "I am S learnSing JavaScript";
 
 // console.log(intro.indexOf("S"));
+// console.log(intro.lastIndexOf("S"));
 // console.log(intro.charAt(12));
 // console.log(intro.replace("JavaScript", "JS"));
 
@@ -232,11 +234,23 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 
 // function
 
-// function Sum( a , b ){
+//  function Sum( a , b ){
 //      var sum = a + b;
 //      console.log(sum);
 // }
 
+// console.log(sum);
+// function Sum(a , b) {
+//      var sum = a + b ;
+//      // console.log(sum);
+//      return sum ;
+// }
+// var su = Sum(10 , 23);
+// console.log(su);
+// console.log(su);
+// console.log(su);
+// console.log(su);
+// console.log(su);
 // for (var i = 0; i < 3 ; i++ ){
 //     var a = Number(prompt("Enter First Value")) ;
 //     var b = Number(prompt("Enter Second Value"));
@@ -251,15 +265,88 @@ var students = ["John", 12345, "10th", "123-ABC12", true, "Male", "Doe"];
 
 // Sum(x , y);
 
-// DOM
-// var elementID = document.getElementById("heading");
-// var elementClass = document.getElementsByClassName("heading1");
+// Math Methods
+// Math.round()
+// Math.ceil()
+// Math.floor()
+// Math.round()
+
+// var sum = 0.999999 ;
+// var randNo = Math.random();
+// var inte = randNo * 7
+// console.log(Math.floor(inte));
+
+//       DOM
+// var heading1 = document.getElementById("heading");
+// var container = document.getElementById('container');
+// var btn = document.getElementById('btn');
+// var elementClass = document.getElementsByClassName("heading1")[1];
 // var elementTag = document.getElementsByTagName("h1");
 
 // var heading = document.getElementById("heading");
 // heading.innerText = "Lecture 01";
 
 // var heading2 = document.getElementById("container");
-// console.log(heading2);
+// // console.log(heading2);
 // heading2.innerHTML = "<h1>This is heading 2</h1>";
 // console.log(heading2);
+
+// Update styling using javascript
+
+// heading1.style.color = "green";
+// heading1.style.backgroundColor = "red";
+// container.style.display = "block";
+
+// Event listners
+// function showContainer() {
+//      container.style.display = "block";
+// }
+// function hideContainer() {
+//      container.style.display = "none";
+// }
+// btn.addEventListener( "click", showContainer)
+// btn.addEventListener( "dblclick", hideContainer)
+
+// Converting strings to integers and decimals
+
+// var num = parseFloat(prompt('Enter Value'));
+// console.log(typeof(num), num);
+
+// var num = 3454654;
+// num = num.toString()
+// console.log(typeof(num), num + 456);
+
+// var num = 435345.4567567;
+// console.log(num.toFixed(2));
+
+// Scope
+// 1). Global Scope
+// 2). Local Scope
+
+// var scope = 23423; // Global
+
+// function showValue() {
+//      var localScope = 345345;
+//      // console.log(scope);
+//      console.log(localScope);
+// }
+// showValue();
+// console.log("Outer ",localScope);
+
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// var i ;
+// for ( var i = 0 ; i < firstNames.length ; i++){
+//      console.log(firstNames[i]);
+// }
+// for ( var i = 0 ; i < firstNames.length ; i++){
+//      console.log(firstNames[i]);
+// }
+
+// DOM Practice
+// var input = document.getElementById('userName');
+// var btn = document.getElementById('submit_btn');
+// console.log(btn);
+
+// function handleSubmit() {
+//      console.log(input.value);
+// }

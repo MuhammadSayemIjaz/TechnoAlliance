@@ -6,15 +6,35 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Lecture 03</title>
+     <style>
+          #heading{
+               color: red;
+               font-style: italic;
+          }
+          .heading1{
+               color: greenyellow;
+          }
+          #container{ 
+               border: 1px solid blue;
+               background-color: aqua;
+               display: none ;
+          }
+     </style>
 </head>
 
 <body>
-     <h1 id="heading">Lecture 03</h1>
-     <h1 class="heading1">Lecture 04</h1>
-     <h1 class="heading1">Lecture 05</h1>
+     <h1 id="heading">Heading 1</h1>
+     <h1 class="heading1">Heading 2</h1>
+     <h1 class="heading1">Heading 3</h1>
      <div id="container">
           <h2>This is Heading 2</h2>
      </div>
+     <form action="">
+          <label for="UserName">UserName</label> <br>
+          <input type="text" name="userName" id="userName" autofocus>
+     </form>
+     <button id="btn" onclick="showContainer()" >Show Container</button>
+     <button id="submit_btn" onclick="handleSubmit()" >Submit</button>
      <script src="index.js"></script>
 </body>
 
