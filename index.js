@@ -350,3 +350,55 @@
 // function handleSubmit() {
 //      console.log(input.value);
 // }
+
+// switch statement
+
+// var a = 34;
+// var b = 45;
+// var sum = 0;
+// var value = prompt("Enter operator symbol")
+// switch (value) {
+//      case "+":
+//           sum = a + b;
+//           break;
+//      case "-":
+//           sum = a - b;
+//           break;
+//      case "/":
+//           sum = a / b;
+//           break;
+//      case "*":
+//           sum = a * b;
+//           break;
+//      default:
+//           console.log("You enter wrong input");
+// }
+// console.log(sum);
+
+// var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+// var str = " My Name is john doe";
+// var i = 10;
+// while( i < 3){
+//      console.log(str[i]);
+//      i++;
+// }
+
+// var i = 10;
+// do {
+//      alert(i);
+//      i++;
+// } while (i < 3);
+
+// DOM Practice
+// var container = document.getElementById('container');
+
+// function showContainer() {
+//      container.style.display = "block";
+// }
+// function hideContainer() {
+//      container.style.display = "none";
+// }
+// function changeBackground() {
+//      var userName = document.getElementById('userName');
+//      userName.style.backgroundColor = "red";
+// }

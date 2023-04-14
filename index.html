@@ -23,7 +23,7 @@
 </head>
 
 <body>
-     <h1 id="heading">Heading 1</h1>
+     <h1 id="heading" onmouseover="showContainer()" onmouseout="hideContainer()">Heading 1</h1>
      <h1 class="heading1">Heading 2</h1>
      <h1 class="heading1">Heading 3</h1>
      <div id="container">
@@ -31,9 +31,9 @@
      </div>
      <form action="">
           <label for="UserName">UserName</label> <br>
-          <input type="text" name="userName" id="userName" autofocus>
+          <input type="text" name="userName" id="userName" autofocus onfocus="changeBackground()">
      </form>
-     <button id="btn" onclick="showContainer()" >Show Container</button>
+     <button id="btn" >Show Container</button>
      <button id="submit_btn" onclick="handleSubmit()" >Submit</button>
      <script src="index.js"></script>
 </body>
