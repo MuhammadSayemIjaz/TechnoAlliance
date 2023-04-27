@@ -7,6 +7,20 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Lecture 03</title>
      <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+          }
+          body{
+               background-color: rgb(255, 255, 255);
+               width: 100%;
+               height: 100vh;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+          }
           #heading{
                color: red;
                font-style: italic;
@@ -19,11 +33,20 @@
                background-color: aqua;
                display: none ;
           }
+          .increaseImageSize{
+               transform: scale(1.5);               
+          }
+          img{ 
+               transform: rotateZ(15deg);
+          }
+          button{
+               margin-top: 50px;
+          }
      </style>
 </head>
 
 <body>
-     <h1 id="heading" onmouseover="showContainer()" onmouseout="hideContainer()">Heading 1</h1>
+     <!-- <h1 id="heading" onmouseover="showContainer()" onmouseout="hideContainer()">Heading 1</h1>
      <h1 class="heading1">Heading 2</h1>
      <h1 class="heading1">Heading 3</h1>
      <div id="container">
@@ -34,7 +57,13 @@
           <input type="text" name="userName" id="userName" autofocus onfocus="changeBackground()">
      </form>
      <button id="btn" >Show Container</button>
-     <button id="submit_btn" onclick="handleSubmit()" >Submit</button>
+     <button id="submit_btn" onclick="handleSubmit()" >Submit</button> -->
+     <!-- <button id="btn" onclick="changeColor()">Change Color</button>
+     <p id="colorText">rgb(255, 255, 255)</p> -->
+     <img id="image" src="https://images.unsplash.com/photo-1591738802175-709fedef8288?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="this this car image" width="100" height="100">
+     <button id="btn" onclick="ChangeImage()">Change Image</button>
+     <button id="btn" onclick="RemoveClass()">Remove Class</button>
+     <button id="btn" onclick="ToggleClass()">Toggle Class</button>
      <script src="index.js"></script>
 </body>
 

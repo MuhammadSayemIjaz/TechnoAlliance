@@ -378,10 +378,15 @@
 // var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
 // var str = " My Name is john doe";
 // var i = 10;
-// while( i < 3){
+
+// while loop 
+
+// while( i < firstNames.length){
 //      console.log(str[i]);
 //      i++;
 // }
+
+// do while loop
 
 // var i = 10;
 // do {
@@ -390,6 +395,7 @@
 // } while (i < 3);
 
 // DOM Practice
+
 // var container = document.getElementById('container');
 
 // function showContainer() {
@@ -402,3 +408,117 @@
 //      var userName = document.getElementById('userName');
 //      userName.style.backgroundColor = "red";
 // }
+
+// Assignment 01 
+// Q)>  Random Color Generator
+
+// var btn = document.getElementById('btn');
+// var colorText = document.getElementById('colorText');
+// var body = document.getElementsByTagName('body')[0];
+
+// // console.log(btn , colorText, body);
+// function changeColor() {
+//      var randomValue =  " "+ Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256) + ", " + Math.floor(Math.random() * 256);
+//      colorText.innerText= "rgb("+ randomValue + ")";
+//      body.style.backgroundColor= "rgb("+ randomValue + ")";
+// }
+
+// Objects 
+
+// var dummyArr = ["John", 1234, "ABC-1234", "7th", "Doe", 2345, "CDE-234", "10t"];
+
+// for (let index = 0; index < dummyArr.length; index++) {
+//      console.log(dummyArr[index]);      
+// }
+
+// syntax
+// var std1 = {
+//      key : 'value'
+// }
+
+// var std1 = {
+//      name: "John",
+//      rollNo: 1234,
+//      regNo: 'ABC-123',
+//      semester: '7th',
+// }
+// var std2 = {
+//      name: "Doe",
+//      rollNo: 2345,
+//      regNo: 'BCD-234',
+//      semester: '8th',
+// }
+
+// console.log(std1.name, std2.name)
+
+//Objects in Arrays :
+
+// var Students = [
+//      {
+//           name : "Doe",
+//           rollNo : 2345,
+//           regNo : 'BCD-234',
+//           semester : '8th',
+//      },
+//      {
+//           name : "John",
+//           rollNo : 1234,
+//           regNo : 'ABC-123',
+//           semester : '7th',
+//      }
+// ]
+
+// for (let index = 0; index < Students.length; index++) {
+//       console.log("Student Name:", Students[index].name);
+//       console.log("Student RollNo:",Students[index].rollNo);
+//       console.log("Student RegNO:",Students[index].regNo);
+//       console.log("Student Semester:",Students[index].semester);
+// }
+
+// Arrays in objects: 
+
+// var user1 = {
+//      userName: 'John',
+//      password: '123@',
+//      email: 'abc@gmail.com',
+//      friends: [
+//           {
+//                userName: 'Doe',
+//                email: 'doe@gmail.com'
+//           },
+//           {
+//                userName: 'Doe1',
+//                email: 'doe2@gmail.com'
+//           },
+//           {
+//                userName: 'Doe2',
+//                email: 'doe2@gmail.com'
+//           },
+//      ]
+// }
+// console.log(user1.friends[0]);
+
+// DOM Images 
+
+const img = document.getElementById("image");
+// const images = [
+//      "https://images.unsplash.com/photo-1533127321739-d5dc53c221c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+//      "https://images.unsplash.com/photo-1497483996262-df5caae87573?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+//      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=959&q=80"
+// ]
+
+
+function ChangeImage() {
+     // var randomNumber = Math.floor(Math.random() * 3);
+     // img.src = images[randomNumber];
+     img.classList.add("increaseImageSize");
+}
+function RemoveClass() {
+     img.classList.remove("increaseImageSize");
+}
+function ToggleClass() {
+     img.classList.toggle("increaseImageSize");
+}
+
+
+
