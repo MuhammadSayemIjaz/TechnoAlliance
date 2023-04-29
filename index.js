@@ -500,25 +500,43 @@
 
 // DOM Images 
 
-const img = document.getElementById("image");
-// const images = [
-//      "https://images.unsplash.com/photo-1533127321739-d5dc53c221c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-//      "https://images.unsplash.com/photo-1497483996262-df5caae87573?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-//      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=959&q=80"
-// ]
+// const img = document.getElementById("image");
+// // const images = [
+// //      "https://images.unsplash.com/photo-1533127321739-d5dc53c221c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+// //      "https://images.unsplash.com/photo-1497483996262-df5caae87573?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+// //      "https://images.unsplash.com/photo-1506015391300-4802dc74de2e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=959&q=80"
+// // ]
 
 
-function ChangeImage() {
-     // var randomNumber = Math.floor(Math.random() * 3);
-     // img.src = images[randomNumber];
-     img.classList.add("increaseImageSize");
+// function ChangeImage() {
+//      // var randomNumber = Math.floor(Math.random() * 3);
+//      // img.src = images[randomNumber];
+//      img.classList.add("increaseImageSize");
+// }
+// function RemoveClass() {
+//      img.classList.remove("increaseImageSize");
+// }
+// function ToggleClass() {
+//      img.classList.toggle("increaseImageSize");
+// }
+
+// DOM CreateElements
+
+// Task 02
+// Simple Todo app
+
+// select input field
+var input = document.getElementById('task');
+// select list (ul) in which we want to add task
+var tasklist = document.getElementsByTagName('ul')[0];
+// function is used for add task in task list 
+function AddTask() {
+     // create list item (li) element
+     var listElement = document.createElement('li');
+     // create textnode element in which we store input field value 
+     var textNode = document.createTextNode(input.value);
+     // append childNode (textNode) into parent node which is li
+     listElement.appendChild(textNode);
+     // append childNodeElement (li with text) into parentElementNode which is ul
+     tasklist.appendChild(listElement);
 }
-function RemoveClass() {
-     img.classList.remove("increaseImageSize");
-}
-function ToggleClass() {
-     img.classList.toggle("increaseImageSize");
-}
-
-
-
