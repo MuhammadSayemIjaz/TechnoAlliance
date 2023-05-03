@@ -526,17 +526,56 @@
 // Simple Todo app
 
 // select input field
-var input = document.getElementById('task');
-// select list (ul) in which we want to add task
-var tasklist = document.getElementsByTagName('ul')[0];
-// function is used for add task in task list 
-function AddTask() {
-     // create list item (li) element
-     var listElement = document.createElement('li');
-     // create textnode element in which we store input field value 
-     var textNode = document.createTextNode(input.value);
-     // append childNode (textNode) into parent node which is li
-     listElement.appendChild(textNode);
-     // append childNodeElement (li with text) into parentElementNode which is ul
-     tasklist.appendChild(listElement);
-}
+// var input = document.getElementById('task');
+// // select list (ul) in which we want to add task
+// var tasklist = document.getElementsByTagName('ul')[0];
+// // function is used for add task in task list 
+// function AddTask() {
+//      // create list item (li) element
+//      var listElement = document.createElement('li');
+//      // create textnode element in which we store input field value 
+//      var textNode = document.createTextNode(input.value);
+//      // append childNode (textNode) into parent node which is li
+//      listElement.appendChild(textNode);
+//      // append childNodeElement (li with text) into parentElementNode which is ul
+//      tasklist.appendChild(listElement);
+// }
+// globle objects
+
+// function openGoogle() {
+//      window.open('https://www.google.com')
+// }
+
+// Form Validation
+
+// var userName = document.getElementById('userName');
+// var password = document.getElementById('password');
+// var mobileNo = document.getElementById('mobileNo');
+// var address = document.getElementById('address');
+// var userEmail = document.getElementById('userEmail');
+// var button =  document.getElementsByTagName('button')[0];
+
+// button.addEventListener('click', handleForm)
+
+// function handleForm(event) {
+//      event.preventDefault();
+//      if(userName.value.trim() === ''){
+//           alert("Please Enter userName");
+//           return;
+//      } else 
+//      if(userEmail.value.includes('.com') !== true){
+//           alert("Please Enter company email address")
+//           return;
+//      }else if(password.value.length < 7){
+//           alert("Password must be greater than 7 digits")
+//           return;
+//      }else if ( mobileNo.value.includes('-') !== true ) {
+//           alert("Please Enter dash after four digits")
+//           return;
+//      } else {
+//          console.log(userName.value.trim());
+//      }
+// }
+// function showPassword() {
+//      password.type = "text"
+// }
