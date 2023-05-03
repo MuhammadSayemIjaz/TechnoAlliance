@@ -579,3 +579,51 @@
 // function showPassword() {
 //      password.type = "text"
 // }
+
+// var container = document.getElementById('diplayDate');
+// console.log(container);
+// var currentDate = new Date();
+// var currentHours = currentDate.getHours();
+// var currentMinutes = currentDate.getMinutes();
+// var currentMonth = currentDate.getMonth();
+
+// var days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday","Saturday"];
+// var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+// function DisplayDate() {
+//      if(currentHours > 12 ){
+//           container.innerText =  currentHours - 12+ ":" + currentMinutes +  " PM " + months[currentMonth] ;
+//      }
+// }
+
+// var btn = document.getElementById('btn');
+// btn.ondblclick = DisplayDate;
+
+// ES6 ECMAScript 6
+
+// variable 
+
+//Types of variable;
+// 1). var
+// 2). let
+// 3). const 
+
+// Difference Between          |          var      |  let   |  const  |
+// 1). Scope                   |  globle/ function | block  |  block  |
+// 2). Redeclare               |        Yes        |   No   |   No    |
+// 3). Change variable Value   |        Yes        |   Yes  |   No    |
+
+// var name = "John";
+// console.log("name ==>>", name);
+// name = "Doe";
+// console.log("after ==>>", name);
+
+// let name = "john";
+// console.log(name);
+// name = "Doe";
+// console.log(name);
+
+// const name = "john";
+// console.log(name);
+// name = "Doe";
+// console.log(name);
