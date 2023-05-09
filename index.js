@@ -612,6 +612,7 @@
 // 1). Scope                   |  globle/ function | block  |  block  |
 // 2). Redeclare               |        Yes        |   No   |   No    |
 // 3). Change variable Value   |        Yes        |   Yes  |   No    |
+// 4).Muteable                 |        Yes        |   Yes  |   No    |
 
 // var name = "John";
 // console.log("name ==>>", name);
@@ -627,3 +628,78 @@
 // console.log(name);
 // name = "Doe";
 // console.log(name);
+
+//Arrow Functions / Anonymous function
+
+//syntex 
+
+// () => {}
+
+// useCase
+
+// const val1 = Number(prompt("Enter First Value"))
+// const val2 = Number(prompt("Enter Second Value"))
+
+// const sum = (a , b) => (a + b) ;
+// console.log(sum(val1, val2))
+
+
+// Assignment
+
+// userName 
+// Email
+// password
+// confirmPassword
+// mobileNo
+// phoneNo // like PTCL No
+// zipcode
+// Age // only 18 plus users are able to signup
+
+
+// Template Literals
+
+// Problem statement
+// const firstname = "John";
+// const lastname = "Doe";
+// const age = 23;
+
+// // const result = "Welcome" + firstname + lastname + ". Your are " + age + "years old";  
+// // console.log(result);
+
+// // symbol
+// //  ``
+
+// const result = `Welcome ${firstname} ${lastname}. You are ${age} years old`;
+// console.log(result);
+
+//Map function
+
+// const students = ["John", "Doe", 34, "REG-1234"];
+
+// for (let index = 0; index < students.length; index++) {
+//      console.log(students[index]);
+// }
+
+// function sum() {
+// }
+// function anotherfunction() {
+//      sum()
+// }
+// anotherfunction()
+
+// syntex
+// const values = students.map((value, index, arr) => {
+//      console.log(value, index, arr);
+//      return value;
+// })
+// console.log(values);
+
+// // foreach function
+
+// // syntex
+// console.log("ForEach function");
+// const value1 = students.forEach((value, index, arr) => {
+//      console.log(value, index, arr);
+//      return value ;
+// })
+// console.log(value1);
