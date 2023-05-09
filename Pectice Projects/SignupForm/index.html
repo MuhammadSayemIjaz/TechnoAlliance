@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Sign up Form</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="left_section">
+          <img src="./assets//images//Sign up-image.png" alt="sign up form image" class="image">
+     </div>
+     <div class="right_section">
+          <div class="header_container">
+               <h1 class="heading">Sign up Form</h1>
+          </div>
+          <div class="main_container">
+               <form class="form_section" onsubmit="handleSubmit()">
+                    <div class="form_input_container">
+                         <div class="form_container">
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> First Name: </label>
+                                   <input type="text" required placeholder="Enter first name" id="fname"
+                                        class="form_input">
+                              </div>
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Email: </label>
+                                   <input type="email" required placeholder="abc@gamil.com" id="email"
+                                        class="form_input">
+                              </div>
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Password: </label>
+                                   <input type="password" required placeholder="Enter password" id="password"
+                                        class="form_input">
+                              </div>
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Mobile No: </label>
+                                   <input type="tel" required placeholder="0324-2342343" id="mobileNo"
+                                        class="form_input" maxlength="12" minlength="12">
+                              </div>
+                         </div>
+                         <div class="form_container">
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Last Name: </label>
+                                   <input type="text" required placeholder="Enter last name" id="lname"
+                                        class="form_input">
+                              </div>
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Age: </label>
+                                   <input type="text" required placeholder="Your age" id="age" class="form_input">
+                              </div>
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Confirm Password: </label>
+                                   <input type="password" required placeholder="Enter confirm password"
+                                        id="confpassword" class="form_input">
+                              </div>
+                             
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Phone No: </label>
+                                   <input type="tel" required placeholder="041-2345654" id="phoneNo" class="form_input"
+                                        maxlength="11" minlength="11">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="form_btn_container">
+                         <button type="submit" class="register_btn btn">Register</button>
+                         <button type="reset" class="reset_btn btn">Reset</button>
+                    </div>
+               </form>
+          </div>
+     </div>
+</body>
+
+<script src="index.js"></script>
+</html>
