@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="left_section">
+          <img src="./assets//images//Sign up-image.png" alt="sign up form image" class="image">
+     </div>
+     <div class="right_section">
+          <div class="header_container">
+               <h1 class="heading">Login Form</h1>
+               <br>
+               <hr>
+               <br>
+               <h2 class="heading">Welcome Back</h2>
+          </div>
+          <div class="main_container">
+               <form class="form_section" onsubmit="handleLogin()">
+                    <div class="form_input_container">
+                         <div class="form_container">
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Email: </label>
+                                   <input type="email" required placeholder="abc@gamil.com" id="email"
+                                        class="form_input">
+                              </div>
+                              <div class="input_container">
+                                   <label for="FirstName" class="form_label"> Password: </label>
+                                   <input type="password" required placeholder="Enter password" id="password"
+                                        class="form_input">
+                              </div>
+                         </div>
+                    </div>
+                    <div class="form_btn_container">
+                         <button type="submit" class="login_btn register_btn btn">Login</button>
+                    </div>
+               </form>
+          </div>
+     </div>
+</body>
+
+<script src="login.js"></script>
+
+</html>

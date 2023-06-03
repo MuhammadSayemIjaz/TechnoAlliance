@@ -703,3 +703,21 @@
 //      return value ;
 // })
 // console.log(value1);
+
+// var flag = false;
+
+// var userInput = prompt("Enter your name");
+
+// const users = ['user1', 'user2', 'user3', 'user4','user5'];
+
+// for (let index = 0; index < users.length; index++) {
+//      if(userInput === users[index]){
+//           flag = true;
+//           break;
+//      }
+// }
+// if(flag === false){
+//      console.log("Your are not eligible for appling this job");
+// } else if (flag === true) {
+//      console.log("Your are eligible for appling this job");
+// }
