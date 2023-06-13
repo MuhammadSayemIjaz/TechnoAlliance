@@ -399,3 +399,109 @@ li a {
 .white_text{
      color: var(--text-color);
 }
+
+.review_section{
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+
+}
+
+.review_header_container {
+     width: 600px;
+     margin: 0 auto;
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.review_header_discription {
+     font-weight: 400;
+     font-size: 10px;
+     text-align: center;
+}
+
+.review_content_container{
+     width: 100%;     
+     padding: 0px 100px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+
+.review_card{
+     height: 170px;
+     width: 230px;
+     border-radius: 3px;
+     box-shadow: 0px 2px 2px var(--background-color);
+     border: 1px solid var(--card-subheading-color);
+}
+
+.review_description_list {
+     padding: 20px ;
+}
+
+.review_content_description{
+     margin-top: 5px;
+     margin-left: 20px;
+     height: 50px;
+     font-weight: 400;
+     font-size: 8px;
+     text-overflow: ellipsis;
+     overflow: hidden;
+     /* white-space: nowrap; */
+}
+
+.review_profile_container {
+     display: flex;
+     align-items: center;
+     gap: 2px;
+     padding: 0px 10px; 
+     margin-top: -8px;    
+}
+
+.review_profile_info {
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+
+.profile_name {
+     font-weight: 600;
+     font-size: 14px;
+     color: var(--card-subheading-color);
+}
+
+.profile_designation {
+     font-weight: 400;
+     font-size: 10px;
+     color: var(--card-subheading-color);
+}
+
+.review_cards_slider {
+     width: 100%;
+     height: 10px;
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+}
+
+.first_dot{
+     width: 20px;
+     height: 10px;
+     background-color: var(--button-bg-color);
+     border-radius: 30px;
+}
+
+.review_option{
+     width: 7px;
+     height: 7px;
+     background-color: var(--button-bg-color);
+     border-radius: 50%;
+}
