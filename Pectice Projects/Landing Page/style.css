@@ -88,6 +88,11 @@ li a {
      gap: 20px;
 }
 
+.hero_image{
+     width: 400px;
+     height: 300px;
+}
+
 .hero_image_section,
 .main_content_image_section {
      width: 50%;
@@ -110,6 +115,11 @@ li a {
 .main_content_section {
      height: 100vh;
      display: flex;
+}
+
+.main_content_image{
+     width: 350px;
+     height: 350px;
 }
 
 .main_content_text_section {
@@ -145,11 +155,11 @@ li a {
 }
 
 .features_section {
-     height: 100vh;
      display: flex;
      align-items: center;
      flex-direction: column;
      padding: 30px;
+     gap: 60px;
 }
 
 
@@ -177,7 +187,8 @@ li a {
 }
 
 .feature_card {
-     max-width: 150px;
+     max-width: 170px;
+     min-width: 170px;
      border-radius: 3px;
      border: 1px solid rgb(235, 233, 233);
      box-shadow: 0px 0px 15px rgba(95, 94, 94, 0.1);
@@ -240,7 +251,6 @@ li a {
 }
 
 .pricing_section {
-     height: 100vh;
      width: 100%;
      display: flex;
      flex-direction: column;
@@ -250,6 +260,7 @@ li a {
 .pricing_header_container {
      display: flex;
      flex-direction: column;
+     align-items: center;
      gap: 15px;
 }
 
@@ -401,12 +412,11 @@ li a {
 }
 
 .review_section{
-     height: 100vh;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-around;
-
+     gap: 65px;
 }
 
 .review_header_container {
