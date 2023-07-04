@@ -20,6 +20,7 @@
      --card-04-color: #F4E7F6;
      --secondary-text-color: #000000;
      --card-subheading-color: rgb(147, 142, 142);
+     --heading-text: rgb(37 35 35 / 84%);
 }
 
 
@@ -33,7 +34,7 @@ nav {
      align-items: center;
 }
 
-.menu_section{
+.menu_section {
      height: 40px;
      width: 40px;
      border-radius: 50%;
@@ -55,10 +56,10 @@ nav {
      height: 100%;
      z-index: 2;
      padding: 20px;
-     display: none; 
+     display: none;
 }
 
-.modal_icon_container{
+.modal_icon_container {
      width: 50px;
      height: 50px;
      display: flex;
@@ -71,19 +72,24 @@ nav {
      width: 100%;
 }
 
-.menu_section:hover{
-    background-color: rgba(177, 170, 170, 0.359);
+.menu_section:hover {
+     background-color: rgba(177, 170, 170, 0.359);
 }
+
 .navigation_section {
      display: flex;
      justify-content: space-between;
+     align-items: center;
 }
 
 .navigation_links_section {
      display: flex;
      align-items: center;
-     height: 100%;
      gap: 30px;
+}
+
+.navigation_links_section>li>a {
+     font-size: 20px;
 }
 
 .navigation_link {
@@ -95,12 +101,12 @@ li a {
      color: var(--text-color);
 }
 
-.links_section{
+.links_section {
      width: 100%;
      height: 100%;
 }
 
-.links_section > ul {
+.links_section>ul {
      width: 100%;
      height: 100%;
      display: flex;
@@ -110,7 +116,7 @@ li a {
      list-style: none;
 }
 
-.links_section > ul > li {
+.links_section>ul>li {
      width: 100%;
      height: 10%;
      display: flex;
@@ -118,7 +124,7 @@ li a {
      align-items: center;
 }
 
-.links_section > ul > li > a {
+.links_section>ul>li>a {
      width: 100%;
      font-size: 25px;
      display: flex;
@@ -127,7 +133,7 @@ li a {
      padding: 30px;
 }
 
-.links_section > ul > li > a:hover {
+.links_section>ul>li>a:hover {
      background: #77767697;
 }
 
@@ -139,9 +145,9 @@ li a {
 }
 
 .hero_btn {
-     width: 100px;
-     height: 40px;
-     font-size: 14px;
+     width: 135px;
+     height: 47px;
+     font-size: 19px;
      font-weight: 400;
      color: var(--text-color);
      background-color: var(--button-bg-color);
@@ -150,7 +156,7 @@ li a {
 }
 
 .hero_section {
-     height: 85vh;
+     height: 90vh;
      display: flex;
      background-color: var(--background-color);
 }
@@ -166,9 +172,10 @@ li a {
      gap: 20px;
 }
 
-.hero_image{
-     width: 400px;
-     height: 300px;
+.hero_image {
+     width: 100vw;
+     padding: 70px;
+     margin-right: 60px;
 }
 
 .hero_image_section,
@@ -182,22 +189,22 @@ li a {
 
 .hero_heading {
      color: var(--text-color);
-     font-weight: 600;
+     font-weight: 700;
+     font-size: 58px;
 }
 
 .hero_paragraph {
      color: var(--paragraph-text-color);
-     font-size: 10px;
+     font-size: 16px;
 }
 
 .main_content_section {
-     height: 100vh;
      display: flex;
 }
 
-.main_content_image{
-     width: 350px;
-     height: 350px;
+.main_content_image {
+     width: 100vw;
+     padding: 100px;
 }
 
 .main_content_text_section {
@@ -210,8 +217,17 @@ li a {
      padding: 0 60px;
 }
 
+.main_content_heading{
+     font-size: 40px;
+     color: var(--heading-text);
+}
+
+.subHeading_title{
+     font-size: 30px;
+}
+
 .subHeading_paragraph {
-     font-size: 10px;
+     font-size: 17px;
 }
 
 .main_content_subheading_section {
@@ -223,8 +239,11 @@ li a {
 .main_content_subHeading_text_container {
      display: flex;
      flex-direction: column;
-     gap: 10px;
+     gap: 15px;
+     margin-top: 20px;
      padding: 0 112px 0 0;
+     align-items: flex-start;
+     justify-content: center;
 }
 
 .main_content_subContainer {
@@ -248,8 +267,9 @@ li a {
 }
 
 .features_heading {
-     font-weight: 600;
-     width: 350px;
+     font-weight: 700;
+     width: 600px;
+     font-size: 40px;
      text-align: center;
      text-transform: capitalize;
 }
@@ -265,17 +285,22 @@ li a {
 }
 
 .feature_card {
-     max-width: 170px;
-     min-width: 170px;
+     max-width: 250px;
+     min-width: 250px;
+     min-height: 300px;
      border-radius: 3px;
      border: 1px solid rgb(235, 233, 233);
      box-shadow: 0px 0px 15px rgba(95, 94, 94, 0.1);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-direction: column;
 }
 
 .feature_icon_container {
      margin-top: 25px;
-     width: 90px;
-     height: 90px;
+     width: 65%;
+     height: 152px;
      border-radius: 50%;
      margin: 20px auto;
      display: flex;
@@ -321,10 +346,11 @@ li a {
 
 .feature_title {
      font-weight: 600;
+     font-size: 23px;
 }
 
 .feature_description {
-     font-size: 7px;
+     font-size: 13px;
      font-weight: 400;
 }
 
@@ -347,6 +373,10 @@ li a {
      align-items: center;
      justify-content: center;
      gap: 10px;
+}
+
+.toggle_btn {
+     margin-left: auto;
 }
 
 .toggle_btn_container {
@@ -418,7 +448,7 @@ li a {
      font-weight: 600;
 }
 
-.pricing_month_text{
+.pricing_month_text {
      font-size: 20px;
 }
 
@@ -475,7 +505,7 @@ li a {
      background-color: var(--button-bg-color);
 }
 
-.classic-pricing_btn{
+.classic-pricing_btn {
      color: var(--text-color);
      background-color: var(--button-bg-color);
 }
@@ -485,11 +515,11 @@ li a {
      background-color: #8fd3f554;
 }
 
-.white_text{
+.white_text {
      color: var(--text-color);
 }
 
-.review_section{
+.review_section {
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -512,8 +542,8 @@ li a {
      text-align: center;
 }
 
-.review_content_container{
-     width: 100%;     
+.review_content_container {
+     width: 100%;
      padding: 0px 100px;
      display: flex;
      justify-content: center;
@@ -521,7 +551,7 @@ li a {
      gap: 10px;
 }
 
-.review_card{
+.review_card {
      height: 170px;
      width: 230px;
      border-radius: 3px;
@@ -530,10 +560,10 @@ li a {
 }
 
 .review_description_list {
-     padding: 20px ;
+     padding: 20px;
 }
 
-.review_content_description{
+.review_content_description {
      margin-top: 5px;
      margin-left: 20px;
      height: 50px;
@@ -548,8 +578,8 @@ li a {
      display: flex;
      align-items: center;
      gap: 2px;
-     padding: 0px 10px; 
-     margin-top: -8px;    
+     padding: 0px 10px;
+     margin-top: -8px;
 }
 
 .review_profile_info {
@@ -580,14 +610,14 @@ li a {
      gap: 10px;
 }
 
-.first_dot{
+.first_dot {
      width: 20px;
      height: 10px;
      background-color: var(--button-bg-color);
      border-radius: 30px;
 }
 
-.review_option{
+.review_option {
      width: 7px;
      height: 7px;
      background-color: var(--button-bg-color);
